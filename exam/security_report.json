@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-01-18T20:56:19.393482",
+  "threats_detected": [
+    {
+      "type": "MALICIOUS_IP",
+      "ip": "185.220.101.4",
+      "timestamp": "2024-01-15T10:30:45",
+      "severity": "CRITICAL",
+      "description": "Обнаружен известный вредоносный IP"
+    },
+    {
+      "type": "SUSPICIOUS_ALERT",
+      "ip": "192.168.1.100",
+      "timestamp": "2024-01-15T10:30:45",
+      "severity": "CRITICAL",
+      "description": "Подозрительный алерт: ET MALWARE Meterpreter Activity",
+      "vt_check": {
+        "threat_level": "MEDIUM",
+        "malicious": 1
+      }
+    },
+    {
+      "type": "MALICIOUS_IP",
+      "ip": "103.21.244.0",
+      "timestamp": "2024-01-15T10:31:22",
+      "severity": "CRITICAL",
+      "description": "Обнаружен известный вредоносный IP",
+      "vt_check": {
+        "threat_level": "HIGH",
+        "malicious": 3
+      }
+    },
+    {
+      "type": "SUSPICIOUS_ALERT",
+      "ip": "103.21.244.0",
+      "timestamp": "2024-01-15T10:31:22",
+      "severity": "HIGH",
+      "description": "Подозрительный алерт: ET SCAN Potential SSH Brute Force",
+      "vt_check": {
+        "threat_level": "HIGH",
+        "malicious": 3
+      }
+    },
+    {
+      "type": "SUSPICIOUS_DNS",
+      "ip": "192.168.1.100",
+      "timestamp": "2024-01-15T10:32:10",
+      "severity": "MEDIUM",
+      "description": "Запрос к подозрительному домену: malicious-site.xyz",
+      "vt_check": {
+        "threat_level": "MEDIUM",
+        "malicious": 1
+      }
+    },
+    {
+      "type": "MALICIOUS_IP",
+      "ip": "5.2.69.50",
+      "timestamp": "2024-01-15T10:34:20",
+      "severity": "CRITICAL",
+      "description": "Обнаружен известный вредоносный IP",
+      "vt_check": {
+        "threat_level": "CRITICAL",
+        "malicious": 12
+      }
+    },
+    {
+      "type": "SUSPICIOUS_ALERT",
+      "ip": "5.2.69.50",
+      "timestamp": "2024-01-15T10:34:20",
+      "severity": "CRITICAL",
+      "description": "Подозрительный алерт: ET EXPLOIT CVE-2021-44228 Log4j",
+      "vt_check": {
+        "threat_level": "CRITICAL",
+        "malicious": 12
+      }
+    }
+  ],
+  "ip_checks": [
+    {
+      "ip": "5.2.69.50",
+      "malicious": 12,
+      "suspicious": 3,
+      "harmless": 90,
+      "undetected": 28,
+      "timestamp": "2026-01-18T20:56:19.394128",
+      "threat_level": "CRITICAL"
+    },
+    {
+      "ip": "192.168.1.100",
+      "malicious": 1,
+      "suspicious": 0,
+      "harmless": 71,
+      "undetected": 16,
+      "timestamp": "2026-01-18T20:56:20.394972",
+      "threat_level": "MEDIUM"
+    },
+    {
+      "ip": "103.21.244.0",
+      "malicious": 3,
+      "suspicious": 1,
+      "harmless": 52,
+      "undetected": 10,
+      "timestamp": "2026-01-18T20:56:21.395685",
+      "threat_level": "HIGH"
+    }
+  ],
+  "blocked_ips": [
+    {
+      "ip": "185.220.101.4",
+      "timestamp": "2026-01-18T20:56:22.399726",
+      "reason": "Обнаружен известный вредоносный IP",
+      "threat_type": "MALICIOUS_IP"
+    },
+    {
+      "ip": "192.168.1.100",
+      "timestamp": "2026-01-18T20:56:22.399808",
+      "reason": "Подозрительный алерт: ET MALWARE Meterpreter Activity",
+      "threat_type": "SUSPICIOUS_ALERT"
+    },
+    {
+      "ip": "103.21.244.0",
+      "timestamp": "2026-01-18T20:56:22.399844",
+      "reason": "Обнаружен известный вредоносный IP",
+      "threat_type": "MALICIOUS_IP"
+    },
+    {
+      "ip": "5.2.69.50",
+      "timestamp": "2026-01-18T20:56:22.399904",
+      "reason": "Обнаружен известный вредоносный IP",
+      "threat_type": "MALICIOUS_IP"
+    },
+    {
+      "ip": "5.2.69.50",
+      "timestamp": "2026-01-18T20:56:22.399935",
+      "reason": "Подозрительный алерт: ET EXPLOIT CVE-2021-44228 Log4j",
+      "threat_type": "SUSPICIOUS_ALERT"
+    }
+  ],
+  "summary": {
+    "total_threats": 7,
+    "critical_threats": 5,
+    "high_threats": 1,
+    "medium_threats": 1,
+    "ips_checked": 3,
+    "ips_blocked": 5,
+    "alerts_sent": 6
+  }
+}

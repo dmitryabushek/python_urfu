@@ -1,0 +1,5 @@
+{"timestamp": "2024-01-15T10:30:45", "src_ip": "192.168.1.100", "dst_ip": "185.220.101.4", "event_type": "alert", "alert": {"signature": "ET MALWARE Meterpreter Activity", "category": "Malware", "severity": 1}}
+{"timestamp": "2024-01-15T10:31:22", "src_ip": "103.21.244.0", "dst_ip": "192.168.1.50", "event_type": "alert", "alert": {"signature": "ET SCAN Potential SSH Brute Force", "category": "Scan", "severity": 2}}
+{"timestamp": "2024-01-15T10:32:10", "src_ip": "192.168.1.100", "dst_ip": "8.8.8.8", "event_type": "dns", "dns": {"query": "malicious-site.xyz", "type": "A"}}
+{"timestamp": "2024-01-15T10:33:05", "src_ip": "192.168.1.100", "dst_ip": "malware-traffic-analysis.net", "event_type": "http", "http": {"hostname": "malware-traffic-analysis.net", "url": "/download/backdoor.exe"}}
+{"timestamp": "2024-01-15T10:34:20", "src_ip": "5.2.69.50", "dst_ip": "192.168.1.100", "event_type": "alert", "alert": {"signature": "ET EXPLOIT CVE-2021-44228 Log4j", "category": "Exploit", "severity": 1}}
