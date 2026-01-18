@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-18T20:56:19.393482",
+  "timestamp": "2026-01-18T21:07:38.390419",
   "threats_detected": [
     {
       "type": "MALICIOUS_IP",
@@ -15,8 +15,8 @@
       "severity": "CRITICAL",
       "description": "Подозрительный алерт: ET MALWARE Meterpreter Activity",
       "vt_check": {
-        "threat_level": "MEDIUM",
-        "malicious": 1
+        "threat_level": "HIGH",
+        "malicious": 2
       }
     },
     {
@@ -48,8 +48,8 @@
       "severity": "MEDIUM",
       "description": "Запрос к подозрительному домену: malicious-site.xyz",
       "vt_check": {
-        "threat_level": "MEDIUM",
-        "malicious": 1
+        "threat_level": "HIGH",
+        "malicious": 2
       }
     },
     {
@@ -80,58 +80,58 @@
       "ip": "5.2.69.50",
       "malicious": 12,
       "suspicious": 3,
-      "harmless": 90,
+      "harmless": 95,
       "undetected": 28,
-      "timestamp": "2026-01-18T20:56:19.394128",
+      "timestamp": "2026-01-18T21:07:38.391330",
       "threat_level": "CRITICAL"
     },
     {
       "ip": "192.168.1.100",
-      "malicious": 1,
-      "suspicious": 0,
-      "harmless": 71,
-      "undetected": 16,
-      "timestamp": "2026-01-18T20:56:20.394972",
-      "threat_level": "MEDIUM"
+      "malicious": 2,
+      "suspicious": 1,
+      "harmless": 80,
+      "undetected": 20,
+      "timestamp": "2026-01-18T21:07:39.392154",
+      "threat_level": "HIGH"
     },
     {
       "ip": "103.21.244.0",
       "malicious": 3,
       "suspicious": 1,
-      "harmless": 52,
-      "undetected": 10,
-      "timestamp": "2026-01-18T20:56:21.395685",
+      "harmless": 90,
+      "undetected": 19,
+      "timestamp": "2026-01-18T21:07:40.392480",
       "threat_level": "HIGH"
     }
   ],
   "blocked_ips": [
     {
       "ip": "185.220.101.4",
-      "timestamp": "2026-01-18T20:56:22.399726",
+      "timestamp": "2026-01-18T21:07:41.393339",
       "reason": "Обнаружен известный вредоносный IP",
       "threat_type": "MALICIOUS_IP"
     },
     {
       "ip": "192.168.1.100",
-      "timestamp": "2026-01-18T20:56:22.399808",
+      "timestamp": "2026-01-18T21:07:41.393742",
       "reason": "Подозрительный алерт: ET MALWARE Meterpreter Activity",
       "threat_type": "SUSPICIOUS_ALERT"
     },
     {
       "ip": "103.21.244.0",
-      "timestamp": "2026-01-18T20:56:22.399844",
+      "timestamp": "2026-01-18T21:07:41.393855",
       "reason": "Обнаружен известный вредоносный IP",
       "threat_type": "MALICIOUS_IP"
     },
     {
       "ip": "5.2.69.50",
-      "timestamp": "2026-01-18T20:56:22.399904",
+      "timestamp": "2026-01-18T21:07:41.394017",
       "reason": "Обнаружен известный вредоносный IP",
       "threat_type": "MALICIOUS_IP"
     },
     {
       "ip": "5.2.69.50",
-      "timestamp": "2026-01-18T20:56:22.399935",
+      "timestamp": "2026-01-18T21:07:41.394105",
       "reason": "Подозрительный алерт: ET EXPLOIT CVE-2021-44228 Log4j",
       "threat_type": "SUSPICIOUS_ALERT"
     }
